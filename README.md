@@ -4,6 +4,7 @@
 </div>
 <h2>🖥️ Sobre o projeto</h2>
 <p>Este projeto web tem como objeivo divulgar, facilitar e melhorar o trabalho.</p>
+<h3>Paleta de cores</h3>
 <h3>Linguagens utilizadas</h3>
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,php" />
