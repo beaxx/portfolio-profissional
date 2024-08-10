@@ -1,3 +1,26 @@
 Código
 código do Mapa interativo: https://www.youtube.com/watch?v=laXdE-DQFBE
 https://paletadecolores.online/pt/marrom/nude/
+-------------------------
+Paleta de cor utilizada:
+
+Footer{
+background-color:#1f1d1d
+color:#E7D37F
+hoover:#d3cb9b
+}
+Endereço{
+background-color: #fffcef
+h2: #698a4a
+h3: #94b278
+p:#697477
+}
+
+Depoimentos{
+box-shadow: #5e38022e
+h2: #6F4E37
+traço: #d3cb9b
+background-caixa:697477
+nome: #7a695d
+
+}
