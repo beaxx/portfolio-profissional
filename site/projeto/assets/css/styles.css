@@ -10,7 +10,6 @@
 /*===== Colores =====*/
 :root{
     --two-color:#7a695d ;
-    --test-color: #F85959;
     --first-color: #d3cb9b;
     --white-color: #231a11;
     --dark-color: #272422;
@@ -24,6 +23,7 @@
     --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
+    --transition-icons: all 0.5s;
 }
 @media screen and (min-width: 768px){
     :root{
@@ -314,6 +314,7 @@ testimonial-box-container{
     right: 0;
     bottom: 0;
     width: 295px;
+    border-radius: 200px;
 }
 
 /* ===== ABOUT =====*/
@@ -325,15 +326,14 @@ testimonial-box-container{
 .about__img{
     display: flex;
     justify-content: center;
-    padding-top: 1rem;
     width: 120px;
     height: 120px;
-    background-color: var(--first-color);
     border-radius: 50%;
     overflow: hidden;
+
 }
 .about__img img{
-    width: 100px;
+    width: 200px;
 }
 .about__subtitle{
     font-size: var(--h2-font-size);
@@ -350,6 +350,7 @@ testimonial-box-container{
 .about__social-icon{
     font-size: 1.4rem;
     margin: 0 var(--mb-1);
+    transition: var(--transition-icons);
 }
 .about__social-icon:hover{
     color: var(--first-color);
@@ -372,6 +373,7 @@ testimonial-box-container{
     padding: .25rem .5rem;
     background-color: #fffcef;
     border-radius: .25rem;
+    transition: var(--transition-icons);
 }
 .skills__name:hover{
     background-color: var(--dark-color);
@@ -443,7 +445,7 @@ testimonial-box-container{
     width: 100%;
     padding: .8rem;
     outline: none;
-    border: 1.5px solid #365E32;
+    border: 1.5px solid #7a695d;
     font-size: var(--normal-font-size);
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
@@ -475,6 +477,7 @@ testimonial-box-container{
 }
 .footer__link{
     padding: .25rem 0;
+    transition: var(--transition-icons);
 }
 .footer__link:hover{
     color: var(--first-color);
@@ -482,6 +485,7 @@ testimonial-box-container{
 .footer__social{
     font-size: 1.4rem;
     margin-right: var(--mb-1);
+    transition: var(--transition-icons)
 }
 .footer__social:hover{
     color: var(--first-color);
@@ -492,6 +496,7 @@ testimonial-box-container{
 @media screen and (max-width: 320px) {
   .home__img {
     width: 230px;
+    
   }
 }
 
@@ -539,8 +544,10 @@ testimonial-box-container{
         row-gap: 0;
     }
     .home__img{
-        width: 524px;
+        width: 450px;
         right: 10%;
+        top: 15%;
+        border-radius: 250px;
     }
 
     .about__container{
@@ -550,11 +557,12 @@ testimonial-box-container{
         padding: 4rem 0;
     }
     .about__img{
-        width: 200px;
-        height: 200px;
+        width: 220px;
+        height: 220px;
     }
     .about__img img{
-        width: 165px;
+        width: 220px;
+        height: 220px;
     }
 
     .skills__container{
@@ -599,6 +607,7 @@ testimonial-box-container{
     }
     .home__img {
         width: 500px;
-        right: 24%;
+        right: 6%;
+        border-radius: 500px;
     }
 }
