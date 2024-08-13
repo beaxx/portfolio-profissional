@@ -247,7 +247,7 @@ testimonial-box-container{
  
 @media(max-width:1060px){
     .testimonial-box{
-        width:45%;
+        width:95%;
         padding: 10px;
     }
 }
@@ -545,7 +545,7 @@ testimonial-box-container{
     }
     .home__img{
         width: 450px;
-        right: 10%;
+        right: 0%;
         top: 15%;
         border-radius: 250px;
     }
