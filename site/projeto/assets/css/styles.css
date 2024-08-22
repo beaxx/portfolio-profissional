@@ -127,6 +127,99 @@ img{
     background-color: var(--first-color);
 }
 /* ===== Carrosel =====*/
+
+.carousel {
+    width: 450px;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    position: relative;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    box-shadow: #d3cb9b 0px 3px 6px, #d3cb9b 0px 3px 6px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    box-shadow: #d3cb9b 0px 3px 6px, #d3cb9b 0px 3px 6px;
+}
+
+.carousel-slide img {
+    width: 450px;
+    height: 300px;
+    display: block;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-slides {
+    transform: translateX(0%);
+}
+#slide2:checked ~ .carousel-slides {
+    transform: translateX(-100%);
+}
+#slide3:checked ~ .carousel-slides {
+    transform: translateX(-200%);
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel-indicators .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .carousel-indicators label[for="slide1"],
+#slide2:checked ~ .carousel-indicators label[for="slide2"],
+#slide3:checked ~ .carousel-indicators label[for="slide3"] {
+    background-color: #fff;
+}
+
+/* Botões de controle */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+
+/*
 .slider-wrapper{
     position: relative;
     max-width: 48rem;
@@ -135,7 +228,8 @@ img{
 }
 .slider{
     display: flex;
-    aspect-ratio: 16/9;
+    width: 450px;
+    height: 300px;
     overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -168,6 +262,7 @@ img{
 .slider-nav a:hover{
     opacity: 1;
 }
+*/
 /*===== NAV =====*/
 .nav{
     height: var(--header-height);
