@@ -102,18 +102,33 @@
                 </div>
 
                   <div class="skills__img">
-                    <div class="slider-wrapper">
-                        <div class="slider">
-                            <img id="slide-1" src="assets/img/local_resized (1).jpeg" alt="foto-consultorio">
-                            <img id="slide-2" src="assets/img/local2_resized.jpeg" alt="consultorio">
-                            <img id="slide-3" src="assets/img/local3_resized.jpeg" alt="consultorio">
+                    <div class="carousel">
+                        <div class="carousel-inner">
+                            <input type="radio" name="carousel" id="slide1" checked>
+                            <input type="radio" name="carousel" id="slide2">
+                            <input type="radio" name="carousel" id="slide3">
+                            
+                            <div class="carousel-slides">
+                                <div class="carousel-slide" id="slide1-content">
+                                    <img src="assets/img/local_resized (1).jpeg" alt="Imagem 1">
+                                </div>
+                                <div class="carousel-slide" id="slide2-content">
+                                    <img src="assets/img/local2_resized.jpeg" alt="Imagem 2">
+                                </div>
+                                <div class="carousel-slide" id="slide3-content">
+                                    <img src="assets/img/local3_resized.jpeg" alt="Imagem 3">
+                                </div>
+                            </div>
+                
+                       <!--Controle-->
+                
+                            <div class="carousel-indicators">
+                                <label for="slide1" class="indicator"></label>
+                                <label for="slide2" class="indicator"></label>
+                                <label for="slide3" class="indicator"></label>
+                            </div>
                         </div>
-                        <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                        </div>
-                   </div>
+                    </div>
                                  
                 </div>
 
@@ -427,6 +442,7 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/star.js"></script>
 
        
     </body>
