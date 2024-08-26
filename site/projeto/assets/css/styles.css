@@ -416,7 +416,7 @@ img{
     background-color: rgba(255,255,255,.3);
     border-radius: .5rem;
     cursor: pointer;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     transition: .3s;
 }
 /* .portfolio__img:hover .portfolio__link{
