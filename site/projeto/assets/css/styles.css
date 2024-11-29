@@ -1,5 +1,6 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -14,6 +15,7 @@
     --white-color: #231a11;
     --dark-color: #272422;
     --text-color: #697477;
+    --shadow-color: #27242248 ;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -97,6 +99,7 @@ img{
     color: var(--two-color);
     margin: var(--mb-4) 0;
     text-align: center;
+    font-family: "Old Standard TT", serif;
 }
 .section-title::after{
     position: absolute;
@@ -434,11 +437,13 @@ input[type="radio"] {
     align-self: flex-end;
     font-size: var(--big-font-size);
     color: var(--white-color);
+    font-family: "Old Standard TT", serif;
     line-height: .8;
+    font-size: 3rem;
 }
 
 .home__title span{
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .home__scroll{
@@ -540,7 +545,7 @@ input[type="radio"] {
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
-    background-color: var(--white-color);
+    background-color: var(--first-color);
 }
 .portfolio__container{
     justify-items: center;
@@ -550,8 +555,9 @@ input[type="radio"] {
     position: relative;
     overflow: hidden;
 }
+
 .portfolio__img img{
-    border-radius: .5rem;
+    border-radius: 10px;
 }
 .portfolio__link{
     position: absolute;
@@ -567,11 +573,9 @@ input[type="radio"] {
     backdrop-filter: blur(15px);
     transition: .3s;
 }
-/* .portfolio__img:hover .portfolio__link{
-    bottom: 0;
-} */
+
 .portfolio__link-name{
-    color: var(--dark-color);
+    color: #231a11;
 }
 
 /* ===== CONTACT =====*/
@@ -641,6 +645,28 @@ input[type="radio"] {
     color: var(--first-color);
 }
 
+/* Botão de wpp */
+.btn-wpp{
+    cursor: pointer;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    background-image: url(../img/whatsapp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.btn-wpp:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 2px var(--shadow-color);
+}
+
 /* ===== MEDIA QUERIES =====*/
 /* For small devices */
 @media screen and (max-width: 320px) {
@@ -704,8 +730,11 @@ input[type="radio"] {
         top: 30%;
         border-radius: 250px;
     }
+    .home__title{
+        font-size:4rem;
+    }
     .home__title span{
-        font-size:2.5rem;
+        font-size:3rem;
     }
 
     .about__container{
@@ -781,7 +810,10 @@ input[type="radio"] {
         top: 25%;
         border-radius: 500px;
     }
+    .home__title{
+        font-size:3.5rem;
+    }
     .home__title span{
-        font-size:3rem;
+        font-size:2rem;
     }
 }
