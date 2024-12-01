@@ -336,7 +336,7 @@ input[type="radio"] {
 .testimonial-box{
     width:500px;
     box-shadow: 2px 2px 30px #5e38022e;
-    background-color: white;
+    background-color: #fffbf6;
     padding: 20px;
     margin: 15px;
     cursor: pointer;
@@ -476,6 +476,7 @@ input[type="radio"] {
 
 /* ===== ABOUT =====*/
 .about__container {
+
     justify-items: center;
     row-gap: 2rem;
     text-align: center;
@@ -532,6 +533,7 @@ input[type="radio"] {
     row-gap: 2rem;
 }
 .skills__subtitle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     color: var(--first-color);
     margin-bottom: var(--mb-3);
 }
@@ -569,7 +571,7 @@ input[type="radio"] {
 
 /* ===== PORTFOLIO =====*/
 .portfolio{
-    background-color: var(--first-color);
+    background-color:#a39782;
 
 }
 .portfolio__container{
@@ -639,7 +641,7 @@ input[type="radio"] {
 }
 .contact__button{
     display: block;
-    background-color: #7B7459;
+    background-color: #a39782;
     color: white;
     padding: .75rem 2.5rem;
     margin-left: auto;
