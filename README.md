@@ -5,7 +5,7 @@
 <h2>🖥️ Sobre o projeto</h2>
 <p>Este projeto web tem como objeivo divulgar, facilitar e melhorar o trabalho.</p>
 <h3>Paleta de cores</h3>
- <img src="https://github.com/user-attachments/assets/46c21ed7-3c95-460d-8642-d263aacabb28" width="600px">
+ <img src="site/paleta.png" width="600px">
 <h3>Linguagens utilizadas</h3>
   <a href="https://skillicons.dev">
     <img src="https://skillicons.dev/icons?i=html,css,javascript" />
