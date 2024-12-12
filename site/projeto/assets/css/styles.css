@@ -278,6 +278,15 @@ input[type="radio"] {
     justify-content: space-between;
     align-items: center;
 }
+
+.skills__box-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 @media screen and (max-width: 768px){
     .nav__menu{
         position: fixed;
@@ -514,7 +523,7 @@ input[type="radio"] {
 }
 .about__social {
     display: flex; 
-    justify-content: center; 
+    justify-content: left; 
     gap: 1rem; 
     margin-top: 1rem; 
 }
@@ -538,19 +547,16 @@ input[type="radio"] {
     margin-bottom: var(--mb-3);
 }
 .skills__name{
-    display: inline-block;
+    text-align: justify;
     font-size: var(--small-font-size);
-    margin-right: var(--mb-2);
-    margin-bottom: var(--mb-3);
-    padding: .25rem .5rem;
+    padding: 1rem;
     background-color: #ffffff;
     border-radius: .25rem;
     transition: var(--transition-icons);
+    width: 350px;
+    height: 380px;
 }
-.skills__name:hover{
-    background-color:#d3cb9b;
-    color:#272422;
-}
+
 .skills__img img{
     border-radius: .5rem;
 }
@@ -609,6 +615,8 @@ input[type="radio"] {
 .contact{
     background-image: url(../img/noisy.png);
 }
+
+
 .contact span{
     color: #7a695d;
 }
@@ -617,6 +625,8 @@ input[type="radio"] {
     row-gap: 2rem;
     
 }
+
+
 .contact__subtitle{
     font-size: var(--normal-font-size);
     color: #7B7459;
@@ -650,6 +660,7 @@ input[type="radio"] {
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+    margin: auto;
 }
 
 /* ===== FOOTER=====*/
@@ -674,6 +685,18 @@ input[type="radio"] {
     padding: 2rem; 
   }
   
+  .inner-footer ul{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+
+.footer__text{
+    text-align: center;
+}
 
 .footer__title{
     font-size: var(--normal-font-size);
@@ -805,8 +828,16 @@ input[type="radio"] {
     }
 
     .skills__container{
-        grid-template-columns: repeat(2, 1fr);
         align-items: center;
+    }
+    .skills_boxes{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        flex: 100%;
+        gap: 20px;
     }
     .skills__box iframe{
         width: 600px;
@@ -824,6 +855,14 @@ input[type="radio"] {
     }
     .contact__form{
         width: 380px;
+    }
+
+.skills__container2{
+        grid-template-columns: repeat(2, 1fr);
+}
+
+    .contact__button{
+        margin: 0px;
     }
 
     .footer__container{
