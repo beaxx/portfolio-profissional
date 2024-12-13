@@ -299,6 +299,22 @@ input[type="radio"] {
         transition: .5s;
         backdrop-filter: blur(10px);
     }
+    .contact__info{
+        text-align: center;   
+    }
+    .contact__text{
+        display: flex;
+        margin: auto;
+        flex-direction: column; /* Empilha os elementos verticalmente */
+        align-items: center;    /* Alinha imagem e texto ao centro */
+        text-align: center;     /* Centraliza o texto */   
+    }
+    .contact__text img{
+        display: none;
+    }
+    .about__social{
+        justify-content: center !important;
+    }
 }
 .nav__item{
     margin-bottom: var(--mb-4);
@@ -449,7 +465,7 @@ input[type="radio"] {
     font-size: var(--big-font-size);
     color: var(--white-color);
     font-family: "Old Standard TT", serif;
-    line-height: 1rem;
+    line-height: 3rem;
     font-size: 3rem;
     width: 100%;
     text-align: center;
@@ -484,20 +500,23 @@ input[type="radio"] {
 }
 
 /* ===== ABOUT =====*/
+
 .about__container {
+
 
     justify-items: center;
     row-gap: 2rem;
     text-align: center;
     display: flex; 
+    flex-wrap: wrap;
     align-items: center; 
     gap: 2rem; 
 }
 .about__img{
     display: flex;
     justify-content: center;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     overflow: hidden;
 
@@ -505,7 +524,8 @@ input[type="radio"] {
 .about__img img{
     border-radius: 50%;
     border:  2px solid #d3cb9b;
-    width: 200px;
+    width: 150px;
+    height: 150px;
 }
 .about__subtitle{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -663,6 +683,11 @@ input[type="radio"] {
     margin: auto;
 }
 
+.contact-gmail, .contact-whats, .contact-insta{
+    width: 30px;
+}
+
+
 /* ===== FOOTER=====*/
 .footer__data {
     display: flex;
@@ -816,6 +841,7 @@ input[type="radio"] {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
         text-align: initial;
+        flex-wrap: nowrap;
         padding: 4rem 0;
     }
     .about__img{
