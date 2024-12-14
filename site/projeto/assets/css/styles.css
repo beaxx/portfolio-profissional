@@ -472,6 +472,7 @@ input[type="radio"] {
     font-size: 3rem;
     width: 100%;
     text-align: center;
+    margin-top: 5rem;
 }
 
 .home__title img{
@@ -495,11 +496,16 @@ input[type="radio"] {
     color: var(--white-color);
 }
 .home__img{
-    position: absolute;
-    right: 10%;
-    bottom: 5%;
+    width: 150px;
+    margin: auto;
+    text-align: center;
+}
+
+.home__img img{
     width: 250px;
-    border-radius: 200px;
+    text-align: center;
+    margin: auto;
+    border-radius: 50%;
 }
 
 /* ===== ABOUT =====*/
@@ -577,7 +583,11 @@ input[type="radio"] {
     border-radius: .25rem;
     transition: var(--transition-icons);
     width: 350px;
-    height: 380px;
+    height: 600px;
+}
+
+.skills__container p{
+    text-align: center;
 }
 
 .skills__img img{
@@ -836,8 +846,6 @@ input[type="radio"] {
     }
     .home__img{
         width: 300px;
-        right: 2%;
-        top: 30%;
         border-radius: 250px;
     }
     .home__title{
@@ -918,7 +926,7 @@ input[type="radio"] {
 /* For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
     .home__container {
-        height: 640px;
+        height: 100vh
     }
 
    
@@ -933,9 +941,7 @@ input[type="radio"] {
 
 @media screen and (min-width: 913px) {
     .home__img {
-        width: 350px;
-        right: 8%;
-        top: 25%;
+        width: 200px;
         border-radius: 500px;
     }
     .home__title{
