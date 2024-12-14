@@ -281,6 +281,8 @@ input[type="radio"] {
 
 .skills__box-text{
     display: flex;
+    width: 50%;
+    margin: auto;
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -360,6 +362,7 @@ input[type="radio"] {
 }
 .testimonial-box{
     width:500px;
+    height: 300px;
     box-shadow: 2px 2px 30px #5e38022e;
     background-color: #fffbf6;
     padding: 20px;
