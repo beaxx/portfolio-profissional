@@ -71,6 +71,8 @@ body{
     -ms-user-select: none; 
 
 }
+
+
 h1,h2,p{
     margin: 0;
 }
@@ -317,6 +319,19 @@ input[type="radio"] {
     .about__social{
         justify-content: center !important;
     }
+    .skills__name{
+        text-align: center;
+        font-size: .750rem !important;
+        padding: 1rem;
+        background-color: #ffffff;
+        border-radius: .25rem;
+        transition: var(--transition-icons);
+        width: 350px;
+        height: 400px !important;
+    }
+    .skills__name.big{
+        height: 750px !important;
+    }
 }
 .nav__item{
     margin-bottom: var(--mb-4);
@@ -362,7 +377,7 @@ input[type="radio"] {
 }
 .testimonial-box{
     width:500px;
-    height: 300px;
+    height: 350px;
     box-shadow: 2px 2px 30px #5e38022e;
     background-color: #fffbf6;
     padding: 20px;
@@ -472,7 +487,6 @@ input[type="radio"] {
     font-size: 3rem;
     width: 100%;
     text-align: center;
-    margin-top: 5rem;
 }
 
 .home__title img{
@@ -576,7 +590,7 @@ input[type="radio"] {
     margin-bottom: var(--mb-3);
 }
 .skills__name{
-    text-align: justify;
+    text-align: center;
     font-size: var(--small-font-size);
     padding: 1rem;
     background-color: #ffffff;
@@ -851,6 +865,7 @@ input[type="radio"] {
     .home__title{
         font-size:3rem;
         text-align: center;
+        margin-top: 5rem;
     }
     .home__title span{
         font-size:3rem;
@@ -872,22 +887,7 @@ input[type="radio"] {
         height: 220px;
     }
 
-    .skills__container{
-        align-items: center;
-    }
-    .skills_boxes{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        width: 100%;
-        flex: 100%;
-        gap: 20px;
-    }
-    .skills__box iframe{
-        width: 600px;
-        height: 450px;
-    }
+   
     .portfolio__container{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -916,10 +916,26 @@ input[type="radio"] {
     }
 }
 
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 1025px){
     .bd-grid{
         margin-left: auto;
         margin-right: auto;
+    }
+    .skills__container{
+        align-items: center;
+    }
+    .skills_boxes{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 100%;
+        flex: 100%;
+        gap: 20px;
+    }
+    .skills__box iframe{
+        width: 600px;
+        height: 450px;
     }
 }
 
@@ -935,7 +951,6 @@ input[type="radio"] {
     .skills__box1 iframe{
         width: 400px;
         height: 300px;
-    
     }
 }
 
