@@ -383,6 +383,7 @@ input[type="radio"] {
     padding: 20px;
     margin: 15px;
     cursor: pointer;
+    z-index: 998;
 }
 .profile-img{
     width:50px;
@@ -436,11 +437,17 @@ input[type="radio"] {
     .testimonial-box{
         width: 95%;
         padding: 10px;
+        z-index: 998;
     }
 }
 @media(max-width:790px){
     .testimonial-box{
         width:100%;
+        height: 400px;
+        z-index: 998;
+    }
+    .testimonial-box.big{
+        height: 500px;
     }
     .testimonial-heading h1{
         font-size: 1.4rem;
@@ -716,6 +723,7 @@ input[type="radio"] {
     font-size: var(--normal-font-size);
     cursor: pointer;
     margin: auto;
+    z-index: 999;
 }
 
 .contact-gmail, .contact-whats, .contact-insta{
@@ -908,6 +916,7 @@ input[type="radio"] {
 
     .contact__button{
         margin: 0px;
+        z-index: 999;
     }
 
     .footer__container{
