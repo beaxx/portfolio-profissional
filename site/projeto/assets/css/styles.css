@@ -283,7 +283,7 @@ input[type="radio"] {
 
 .skills__box-text{
     display: flex;
-    width: 50%;
+    width: 90%;
     margin: auto;
     justify-content: center;
     text-align: center;
@@ -327,10 +327,10 @@ input[type="radio"] {
         border-radius: .25rem;
         transition: var(--transition-icons);
         width: 350px;
-        height: 400px !important;
+        height: 300px !important;
     }
     .skills__name.big{
-        height: 750px !important;
+        height: 5% !important;
     }
 }
 .nav__item{
