@@ -1,4 +1,4 @@
-<h1 align="center">PORTIFÓLIO PESSOAL</h1>
+<h1 align="center">PORTFÓLIO PROFISSIONAL</h1>
 <div align="center">
 <img src="site/projeto/assets/img/Logo_Camila-removebg-preview.png" width="200px">
 </div>
